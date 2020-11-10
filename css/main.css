@@ -919,6 +919,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: all .2s linear;
 }
 
+.price__slides {
+  position: relative;
+}
+
 .slide-price {
   display: -webkit-box;
   display: -ms-flexbox;
