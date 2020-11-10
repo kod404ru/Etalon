@@ -1,6 +1,10 @@
 .price
   background: white
   padding: 98px 0 94px
+  @media (max-width: $md1)
+    padding: 44px 0
+  @media (max-width: $md3)
+    padding: 24px 0
 
 .price__inner
   max-width: 1136px
@@ -13,11 +17,24 @@
   line-height: 0.5
   margin: 0 0 37px
   text-align: center
+  @media (max-width: $md1)
+    font-size: 37px
+    line-height: 1
+    margin: 0 0 25px
+  @media (max-width: $md3)
+    font-size: 32px
+    margin: 0 0 20px
+  @media (max-width: $md4)
+    font-size: 24px
 
 .price__switches
   margin: 0 0 25px
   display: flex
   justify-content: center
+  @media (max-width: $md2)
+    flex-flow: row wrap
+  @media (max-width: $md3)
+    margin: 0 0 10px
 
 .price__switch
   color: #000
@@ -37,6 +54,18 @@
   &--fourth
     padding: 13px 20px
     margin: 0
+  @media (max-width: $md3)
+    flex: 0 1 40%
+    &:nth-child(1)
+      margin: 0 7px 10px 0
+    &:nth-child(2)
+      margin: 0 0 10px 0
+    &:nth-child(3)
+      margin: 0 7px 0 0
+  @media (max-width: 550px)
+    padding: 10px 0
+  @media (max-width: $md4)
+    flex: 0 1 48%
 
 .price__switch.active
   background: #ffba00
@@ -54,6 +83,9 @@
   top: 0
   left: 0
   transition: all 1s ease
+  @media (max-width: $md2)
+    flex-flow: row wrap
+    justify-content: center
 
 .slide-price.active
   visibility: visible
@@ -65,14 +97,29 @@
   background: #f7f7f7
   &--left
     padding: 21px 15px 50px
+    @media (max-width: $md2)
+      flex: 0 1 50%
+      order: 2
+    @media (max-width: $md3)
+      display: none
   &--middle
     flex: 0 1 44%
     background: #e8e8e8
     padding: 58px 35px 30px 42px
     display: flex
     flex-direction: column
+    @media (max-width: $md2)
+      padding: 35px 15px
+      flex: 0 1 100%
+      order: 1
+      align-items: center
   &--right
     padding: 21px 20px 50px
+    @media (max-width: $md2)
+      flex: 0 1 50%
+      order: 3
+    @media (max-width: $md3)
+      display: none
 
 .slide-price__img
   padding-top: 65%
@@ -101,7 +148,8 @@
   font-size: 12px
   line-height: 1.39
   span
-    display: block
+    @media (min-width: $md1)
+      display: block
     span
       display: inline-block
       font-weight: 700
@@ -113,12 +161,25 @@
   font-weight: 700
   text-transform: uppercase
   margin: 0 0 33px
+  @media (max-width: $md3)
+    text-align: center
+
+.slide-price__row-block
+  flex: 1 1 auto
+  margin: 0 0 20px
+  @media (max-width: $md1)
+    margin: 0 0 34px
+  @media (max-width: $md2)
+    display: flex
+  @media (max-width: $md3)
+    display: block
 
 .slide-price__block
   &--wall
     margin: 0 0 7px
+    @media (max-width: $md2)
+      margin: 0 20px 0 0
   &--floor
-    flex: 1 1 auto
 
 .slide-price__block-title
   font-size: 17px
@@ -148,6 +209,9 @@
   display: flex
   justify-content: space-between
   align-items: flex-end
+  @media (max-width: $md1)
+    flex-direction: column
+    align-items: center
 
 .slide-price__cost
 
@@ -177,6 +241,8 @@
   font-weight: 700
   sup
     font-size: 15px
+  @media (max-width: $md1)
+    margin: 0 0 15px
 
 .slide-price__calculate
 
