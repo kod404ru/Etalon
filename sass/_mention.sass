@@ -1,0 +1,66 @@
+.mention
+  background: #f8f8f8
+
+.mention__inner
+  padding: 42px 47px
+  @media (max-width: $md3)
+    padding: 22px 27px
+
+.mention__row
+
+.row-mention
+  max-width: 657px
+  margin: 0 auto
+  display: flex
+  align-items: center
+  @media (max-width: $md3)
+    justify-content: center
+  @media (max-width: 600px)
+    flex-direction: column
+
+.row-mention__labels
+  margin: 0 20px 0 0
+  @media (max-width: $md3)
+    margin: 0 10px 0 0
+  @media (max-width: 600px)
+    margin: 0 0 10px
+
+.row-mention__labels-img
+  display: flex
+  align-items: center
+  a
+    &:first-child
+      margin: 0 19px 0 0
+    &:nth-child(2)
+      margin: 0 12px 0 0
+    img
+      max-width: 100%
+  @media (max-width: $md3)
+    a
+      max-width: 110px
+
+.row-mention__labels-text
+  color: #666
+  font-size: 29px
+  text-align: center
+  @media (max-width: $md3)
+    font-size: 20px
+
+.row-mention__rating
+  color: #000
+  text-transform: uppercase
+  background: #ffba00
+  padding: 24px 13px 16px
+  text-align: center
+  @media (max-width: $md3)
+    padding: 10px 7px 9px
+
+.row-mention__rating-num
+  font-size: 75px
+  font-weight: 700
+  @media (max-width: $md3)
+    font-size: 45px
+
+.row-mention__rating-text
+  font-size: 8px
+  line-height: 2

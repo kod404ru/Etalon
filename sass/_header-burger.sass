@@ -1,0 +1,47 @@
+.header__burger
+  display: none
+  @media (max-width: $md1)
+    display: block
+    width: 30px
+    height: 20px
+    position: relative
+    margin: 0 0 0 15px
+    z-index: 3
+    cursor: pointer
+    span
+      width: 100%
+      height: 2px
+      background: black
+      position: absolute
+      left: 0
+      &:first-child
+        top: 0
+      &:nth-child(2)
+        top: 50%
+        transform: translateY(-50%)
+      &:last-child
+        bottom: 0
+
+.header__burger.on
+  span
+    background: black
+    &:first-child
+      transform: translateY(9px) rotate(45deg)
+    &:nth-child(2)
+      display: none
+    &:last-child
+      transform: translateY(-9px) rotate(-45deg)
+
+.body-lock
+  overflow: hidden
+
+.shadow
+  position: relative
+  &:after
+    content: ''
+    height: 100%
+    width: 100%
+    background: rgba(184, 184, 184, .8)
+    position: absolute
+    top: 0
+    left: 0

@@ -1,0 +1,160 @@
+.header
+  position: fixed
+  z-index: 3
+  top: 0
+  left: 0
+  width: 100%
+  background: white
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: white
+    z-index: 2
+
+.header__inner
+  max-width: 1197px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 21px 0 18px
+  @media (max-width: $md1)
+    padding: 15px 20px 13px
+  @media (max-width: $md2)
+    padding: 10px 20px 9px
+
+.header__logo
+
+.logo-header
+  max-width: 146px
+  height: auto
+  position: relative
+  z-index: 3
+  @media (max-width: $md1)
+    max-width: 130px
+  @media (max-width: $md2)
+    max-width: 115px
+
+.logo-header__img
+  max-width: 100%
+
+.header__block
+  position: relative
+  z-index: 3
+  display: flex
+  align-items: center
+  @media (max-width: $md1)
+    position: fixed
+    z-index: 2
+    top: 0
+    right: -30%
+    width: 30%
+    height: 100%
+    background: rgba(255, 186, 0, 1)
+    flex-direction: column
+    padding: 90px 20px 10px
+    overflow: auto
+    border-left: 4px solid black
+    transition: all .3s linear
+  @media (max-width: $md2)
+    width: 40%
+    right: -40%
+    padding: 70px 20px 10px
+  @media (max-width: $md3)
+    width: 55%
+    right: -55%
+  @media (max-width: $md4)
+    width: 85%
+    right: -85%
+
+.header__block.on
+  transform: translateX(-100%)
+
+.header__nav
+
+.nav-header
+  display: flex
+  margin: 0 38px 0 0
+  @media (max-width: $md1)
+    display: block
+    margin: 0
+    align-self: flex-start
+    order: 2
+
+.nav-header__item
+  &:not(:last-child)
+    margin: 0 25px 0 0
+    @media (max-width: $md1)
+      margin: 0 0 20px
+
+.nav-header__link
+  color: #000
+  font-size: 16px
+  letter-spacing: -0.32px
+  text-transform: uppercase
+  @media (min-width: 992.98px)
+    &:hover
+      color: #ffba00
+      transition: all .2s linear
+  @media (max-width: $md1)
+    font-size: 19px
+    letter-spacing: 2px
+
+.header__data-company
+
+.data-company-header
+  display: flex
+  align-items: center
+  @media (max-width: $md1)
+    flex-direction: column
+    order: 1
+    margin: 0 0 30px
+
+.data-company-header__info
+  margin: 0 21px 0 0
+  @media (max-width: $md1)
+    margin: 0 0 15px
+    text-align: center
+
+.data-company-header__number
+  font-size: 21px
+  font-weight: 700
+  text-transform: uppercase
+  color: #000
+  line-height: 1.2
+  @media (max-width: $md1)
+    font-size: 22px
+
+.data-company-header__schedule
+  color: #000607
+  font-size: 12px
+  text-align: right
+  line-height: 1.2
+  @media (max-width: $md1)
+    text-align: left
+    font-size: 14px
+    padding: 0 0 0 12px
+
+.data-company-header__callback
+  color: #000
+  font-size: 12px
+  font-weight: 700
+  text-transform: uppercase
+  background: none
+  border-radius: 1.5em
+  border: 2px solid #ffba00
+  padding: 1.2em 1em
+  @media (min-width: 992.98px)
+    &:hover
+      background: #ffba00
+      transition: all .2s linear
+  @media (max-width: $md1)
+    border: none
+    background: black
+    color: white
+    padding: 1em 3em
+    border-radius: .7em

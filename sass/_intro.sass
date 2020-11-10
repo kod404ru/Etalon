@@ -1,0 +1,84 @@
+.intro
+  background: url(../images/intro/bg2.jpg)no-repeat center / cover
+
+.intro__inner
+  padding: 340px 0 182px
+  @media (max-width: $md1)
+    padding: 300px 0 162px
+  @media (max-width: $md2)
+    padding: 200px 0 120px
+  @media (max-width: $md3)
+    padding: 170px 0 100px
+  @media (max-width: $md4)
+    text-align: center
+
+.intro__title
+  color: #fff
+  font-size: 96px
+  font-weight: 700
+  line-height: 0.94
+  text-transform: uppercase
+  margin: 0 0 43px
+  span
+    display: block
+  @media (max-width: $md1)
+    font-size: 85px
+  @media (max-width: $md2)
+    font-size: 72px
+  @media (max-width: $md3)
+    font-size: 65px
+    color: #ffba00
+    span
+      margin: 8px 0 0
+      color: white
+      line-height: 1
+      font-size: 27px
+  @media (max-width: $md4)
+    font-size: 55px
+    span
+      font-size: 21px
+
+.intro__behaviour
+  margin: 0 0 46px
+
+.intro__behaviour-item
+  color: #fff
+  font-size: 21px
+  line-height: 1.64
+  position: relative
+  padding: 0 0 0 23px
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+    height: 11px
+    width: 11px
+    background: #ffba00
+  @media (max-width: $md1)
+    font-size: 20px
+  @media (max-width: $md3)
+    font-size: 18px
+    &:before
+      height: 8px
+      width: 8px
+  @media (max-width: $md4)
+    font-size: 15px
+    padding: 0
+    &:before
+      display: none
+
+.intro__price-btn
+  background: #ffba00
+  color: #000
+  font-size: 18px
+  font-weight: 700
+  text-transform: uppercase
+  padding: 1.1em 1.5em
+  @media (max-width: $md1)
+    font-size: 16px
+  @media (max-width: $md2)
+    padding: 1em 1.3em
+  @media (max-width: $md2)
+    font-size: 15px
