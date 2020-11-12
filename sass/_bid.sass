@@ -1,0 +1,127 @@
+.bid
+  background: white
+
+.bid__inner
+  max-width: 1168px
+  margin: 0 auto
+  padding: 121px 0 172px
+  display: flex
+  justify-content: space-between
+
+.bid__unit
+  &--text
+    flex: 0 1 60%
+  &--slider
+    flex: 0 1 40%
+
+.unit-bid
+
+.unit-bid__title
+  font-size: 37px
+  font-weight: 700
+  margin: 0 0 39px
+
+.unit-bid__body
+  padding: 0 0 0 15px
+
+.unit-bid__behaviour
+  margin: 0 0 45px
+
+.unit-bid__behaviour-item
+  font-size: 21px
+  line-height: 1.39
+  position: relative
+  padding: 0 0 0 25px
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+    height: 9px
+    width: 9px
+    background: #ffba00
+
+.unit-bid__data
+
+.unit-bid__form
+
+.bid-form
+
+.bid-form__user-data
+  display: flex
+  max-width: 535px
+  color: #8d98b1
+  font-size: 17px
+  margin: 0 -10px 30px
+
+.bid-form__user-name
+  flex: 0 1 50%
+  padding: 0 10px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 7px
+    right: 22px
+    height: 24px
+    width: 21px
+    background: url(../images/bid/icons/man.jpg)no-repeat center
+
+.bid-form__user-name-input
+  color: #8d98b1
+  font-size: 18px
+  border-bottom: 2px solid #d2d2d2
+  width: 100%
+  padding: 10px
+
+.bid-form__user-tel
+  flex: 0 1 50%
+  padding: 0 10px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 4px
+    right: 22px
+    height: 28px
+    width: 24px
+    background: url(../images/bid/icons/phone.jpg)no-repeat center
+
+.bid-form__user-tel-input
+  color: #8d98b1
+  font-size: 18px
+  border-bottom: 2px solid #d2d2d2
+  width: 100%
+  padding: 10px
+
+.bid-form__agreed-upon
+  color: #aeaeae
+  font-size: 12px
+  margin: 0 0 30px
+  display: flex
+  align-items: center
+  a
+    color: #aeaeae
+    text-decoration: underline
+    padding: 0 0 0 4px
+
+.bid-form__agreed-checkbox
+  margin: 0 11px 0 0
+  width: 19px
+  height: 19px
+
+.bid-form__btn-block
+
+.bid-form__btn
+  padding: 14px 60px
+  font-size: 15px
+  font-weight: 700
+  text-transform: uppercase
+  border-radius: 17px
+  border: 2px solid #ffba00
+  background: none
+  @media (min-width: 992.98px)
+    &:hover
+      background: #ffba00
+      transition: all .2s linear

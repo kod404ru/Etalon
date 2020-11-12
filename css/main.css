@@ -932,8 +932,8 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
 }
 
 @media (max-width: 992.98px) {
@@ -1452,5 +1452,170 @@ h1, h2, h3, h4, h5, h6 {
   .discount__logo {
     max-width: 90px;
     margin: 0 auto;
+  }
+}
+
+.bid {
+  background: white;
+}
+
+.bid__inner {
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 121px 0 172px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bid__unit--text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+}
+
+.bid__unit--slider {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+}
+
+.unit-bid__title {
+  font-size: 37px;
+  font-weight: 700;
+  margin: 0 0 39px;
+}
+
+.unit-bid__body {
+  padding: 0 0 0 15px;
+}
+
+.unit-bid__behaviour {
+  margin: 0 0 45px;
+}
+
+.unit-bid__behaviour-item {
+  font-size: 21px;
+  line-height: 1.39;
+  position: relative;
+  padding: 0 0 0 25px;
+}
+
+.unit-bid__behaviour-item:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  height: 9px;
+  width: 9px;
+  background: #ffba00;
+}
+
+.bid-form__user-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 535px;
+  color: #8d98b1;
+  font-size: 17px;
+  margin: 0 -10px 30px;
+}
+
+.bid-form__user-name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 10px;
+  position: relative;
+}
+
+.bid-form__user-name:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 22px;
+  height: 24px;
+  width: 21px;
+  background: url(../images/bid/icons/man.jpg) no-repeat center;
+}
+
+.bid-form__user-name-input {
+  color: #8d98b1;
+  font-size: 18px;
+  border-bottom: 2px solid #d2d2d2;
+  width: 100%;
+  padding: 10px;
+}
+
+.bid-form__user-tel {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 10px;
+  position: relative;
+}
+
+.bid-form__user-tel:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 22px;
+  height: 28px;
+  width: 24px;
+  background: url(../images/bid/icons/phone.jpg) no-repeat center;
+}
+
+.bid-form__user-tel-input {
+  color: #8d98b1;
+  font-size: 18px;
+  border-bottom: 2px solid #d2d2d2;
+  width: 100%;
+  padding: 10px;
+}
+
+.bid-form__agreed-upon {
+  color: #aeaeae;
+  font-size: 12px;
+  margin: 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bid-form__agreed-upon a {
+  color: #aeaeae;
+  text-decoration: underline;
+  padding: 0 0 0 4px;
+}
+
+.bid-form__agreed-checkbox {
+  margin: 0 11px 0 0;
+  width: 19px;
+  height: 19px;
+}
+
+.bid-form__btn {
+  padding: 14px 60px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 17px;
+  border: 2px solid #ffba00;
+  background: none;
+}
+
+@media (min-width: 992.98px) {
+  .bid-form__btn:hover {
+    background: #ffba00;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
   }
 }
