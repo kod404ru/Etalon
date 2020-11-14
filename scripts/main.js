@@ -57,8 +57,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
 		})
 	}
 
+	const bidForm = document.querySelector('#bidForm'),
+		bidUserNameInput = document.querySelector('#bidUserNameInput'),
+		bidUserPhoneInput = document.querySelector('#bidUserTelInput')
 
 
+	//slider bid-section=============================================
+	// $('.bid__unit--slider').slick()
 
 
 

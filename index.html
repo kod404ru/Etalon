@@ -6,9 +6,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
-	<!-- <script defer src="scripts/jquery-3.5.1.min.js"></script> -->
-	<!-- <script defer src="script/slick.min.js"></script> --> -->
-	<script defer src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -478,12 +475,12 @@
 									<li class="unit-bid__behaviour-item">Экономия бюджета и времени</li>
 								</ul>
 								<div class="unit-bid__data">
-									<form action="#" method="get" class="unit-bid__form bid-form">
+									<form action="#" method="post" id="bidForm" class="unit-bid__form bid-form">
 										<div class="bid-form__user-data">
-											<div class="bid-form__user-name"><input type="text" value="Имя" name="" id="bidUserNameInput"
-													class="bid-form__user-name-input"></div>
-											<div class="bid-form__user-tel"><input type="tel" value="Телефон" name="" id="bidUserTelInput"
-													class="bid-form__user-tel-input"></div>
+											<div class="bid-form__user-name"><input type="text" value="Имя" name="" tabindex="1"
+													id="bidUserNameInput" class="bid-form__user-name-input"></div>
+											<div class="bid-form__user-tel"><input type="tel" tabindex="2" value="Телефон" name=""
+													id="bidUserTelInput" class="bid-form__user-tel-input"></div>
 										</div>
 										<div class="bid-form__agreed-upon"><input type="checkbox" name="" id="bidAgreedCheckbox"
 												class="bid-form__agreed-checkbox">Я даю согласие на обработку <a href="http://#">персональных
@@ -493,13 +490,188 @@
 								</div>
 							</div>
 						</div>
-						<div class="bid__unit bid__unit--slider"></div>
+						<!-- <div class="bid__unit bid__unit--slider unit-bid">
+							<div class="unit-bid__slider-item">
+								<img src="images/bid/picture1.jpg" alt="">
+							</div>
+							<div class="unit-bid__slider-item">
+								<img src="images/bid/picture2.jpg" alt="">
+							</div>
+							<div class="unit-bid__slider-item">
+								<img src="images/bid/picture1.jpg" alt="">
+							</div>
+							<div class="unit-bid__slider-item">
+								<img src="images/bid/picture2.jpg" alt="">
+							</div>
+							<div class="unit-bid__slider-item">
+								<img src="images/bid/picture1.jpg" alt="">
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			<section class="blue">
+				<div class="_container">
+					<div class="blue__inner">
+						<h2 class="blue__interest">0%</h2>
+						<h2 class="blue__benefit">выгодная рассрочка</h2>
+						<ul class="blue__behaviour">
+							<li class="blue__behaviour-item">Без первоначального взноса</li>
+							<li class="blue__behaviour-item">Незаметно для семейного бюджета</li>
+							<li class="blue__behaviour-item">Оформление в офису за 20 минут</li>
+							<li class="blue__behaviour-item">Сроком до 12 месяцев</li>
+						</ul>
+						<div class="blue__btn-block"><button type="submit" class="blue__btn">Оставить заявку на рассрочку</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="orange">
+				<div class="_container">
+					<div class="orange__inner">
+						<h2 class="orange__title">Как мы работаем?</h2>
+						<div class="orange__row">
+							<div class="orange__unit-wrap">
+								<div class="orange__unit unit-orange">
+									<div class="unit-orange__number">
+										<div class="unit-orange__number-top">
+											<img src="images/orange/icons/check0.jpg"
+												alt="Иконка изображающая круг в котором стоит галка, в большинстве случае ялвляется визуальным инструментом подтверждения действия">
+										</div>
+										<div class="unit-orange__number-bottom">1</div>
+									</div>
+									<div class="unit-orange__text">
+										<h3 class="unit-orange__title">Отправьте заявку</h3>
+										<div class="unit-orange__par unit-orange__par--1">
+											Позвонить нам по номеру <a class="unit-orange__par-tel" href="tel:+74954807360">+7 (495)
+												480-73-60</a>
+											или <a class="unit-orange__par-link" href="http://#">оставить заявку</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="orange__unit-wrap">
+								<div class="orange__unit unit-orange">
+									<div class="unit-orange__number">
+										<div class="unit-orange__number-top">
+											<img src="images/orange/icons/check0.jpg"
+												alt="Иконка изображающая круг в котором стоит галка, в большинстве случае ялвляется визуальным инструментом подтверждения действия">
+										</div>
+										<div class="unit-orange__number-bottom">2</div>
+									</div>
+									<div class="unit-orange__text">
+										<h3 class="unit-orange__title">Делаем замер</h3>
+										<div class="unit-orange__par unit-orange__par--2">
+											Бесплатный выезд замерщика на объект
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="orange__unit-wrap">
+								<div class="orange__unit unit-orange">
+									<div class="unit-orange__number">
+										<div class="unit-orange__number-top">
+											<img src="images/orange/icons/check0.jpg"
+												alt="Иконка изображающая круг в котором стоит галка, в большинстве случае ялвляется визуальным инструментом подтверждения действия">
+										</div>
+										<div class="unit-orange__number-bottom">3</div>
+									</div>
+									<div class="unit-orange__text">
+										<h3 class="unit-orange__title">Расчет сметы</h3>
+										<div class="unit-orange__par unit-orange__par--3">
+											Расчёт сметы на объекте
+											за двадцать минут
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="orange__unit-wrap">
+								<div class="orange__unit unit-orange">
+									<div class="unit-orange__number">
+										<div class="unit-orange__number-top">
+											<img src="images/orange/icons/check0.jpg"
+												alt="Иконка изображающая круг в котором стоит галка, в большинстве случае ялвляется визуальным инструментом подтверждения действия">
+										</div>
+										<div class="unit-orange__number-bottom">4</div>
+									</div>
+									<div class="unit-orange__text">
+										<h3 class="unit-orange__title">Подписываем договор</h3>
+										<div class="unit-orange__par unit-orange__par--4">
+											Подписание договора
+											на объекте или в офисе компании
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="orange__unit-wrap">
+								<div class="orange__unit unit-orange">
+									<div class="unit-orange__number">
+										<div class="unit-orange__number-top">
+											<img src="images/orange/icons/check0.jpg"
+												alt="Иконка изображающая круг в котором стоит галка, в большинстве случае ялвляется визуальным инструментом подтверждения действия">
+										</div>
+										<div class="unit-orange__number-bottom">5</div>
+									</div>
+									<div class="unit-orange__text">
+										<h3 class="unit-orange__title">Ремонт</h3>
+										<div class="unit-orange__par unit-orange__par--5">
+											Выполнение ремонтных работ
+											в соответствии с графиком
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="orange__unit-wrap">
+								<div class="orange__unit unit-orange">
+									<div class="unit-orange__number">
+										<div class="unit-orange__number-top">
+											<img src="images/orange/icons/check0.jpg"
+												alt="Иконка изображающая круг в котором стоит галка, в большинстве случае ялвляется визуальным инструментом подтверждения действия">
+										</div>
+										<div class="unit-orange__number-bottom">6</div>
+									</div>
+									<div class="unit-orange__text">
+										<h3 class="unit-orange__title">Сдача объекта</h3>
+										<div class="unit-orange__par unit-orange__par--6">
+											Вы принимаете профессионально выполненный ремонт. Новоселье!
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="clients-slider">
+				<div class="_container">
+					<div class="clients-slider__inner">
+						<div class="clients-slider__item clients-item">
+							<div class="clients-item__img">
+								<img src="images/clients/photography.jpg"
+									alt="Улыбающаяся длинноволосая шатенка демонстрирующая жест пальцами Все хорошо">
+							</div>
+							<div class="clients-item__text">
+								<h2 class="clients-item__title">Отзывы наших клиентов</h2>
+								<p class="clients-item__par">
+									“ Рассказываю всё как было с самого начала. Решила я обновить спальню, муж сразу сказал что у него нет
+									времени возиться с мастерами-цыганами, у которых нужно стоять за спиной, когда они работают и сказал
+									чтоб я нашла нормальную компанию. Обратилась в компанию ”Эталон”. На следующий день пришел прораб
+									Александр, утвердили с ним материал и мастера сразу приступили к работе. Удивило, что ремонт сделали
+									на 4 дня, как и обещали. Всем остались довольны. И материал сами закупили и убрались после ремонта,
+									очень удобная фирма. Всем советую! “
+								</p>
+								<div class="clients-item__name">Анастасия Попова</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="footer"></footer>
 	</div>
+	<script src="scripts/jquery-3.5.1.min.js"></script>
+	<script src="scripts/slick.min.js"></script>
+	<script src="scripts/main.js"></script>
 </body>
 
 </html>
