@@ -1,0 +1,114 @@
+.footer
+  background: #1d1d1d
+  padding: 97px 0 75px
+
+.footer__inner
+
+.footer__top
+  display: flex
+  justify-content: space-between
+  margin: 0 0 70px
+
+.box-footer
+
+.box-footer__logo
+  margin: 0 0 12px
+  max-width: 146px
+  img
+    max-width: 100%
+
+.box-footer__behaviour
+  font-family: $thffm
+  font-size: 14px
+  color: #666
+  margin: 0 0 10px
+
+.box-footer__deviz
+  color: white
+  line-height: 1.71
+  @media (min-width: $md1)
+    padding: 0 270px 0 0
+
+.footer__nav
+  display: flex
+  max-width: 770px
+  margin: 0 -30px
+  width: 100%
+
+.footer__unit
+
+.unit-footer
+  padding: 0 30px
+
+.unit-footer__list
+  position: relative
+  padding: 26px 0 0
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    height: 1px
+    width: 100%
+    background: white
+
+.footer__unit--price
+  flex: 0 1 27%
+
+.unit-footer__item
+  a
+    color: #f9f9f9
+    font-family: $thffm
+    font-size: 14px
+    line-height: 2.14
+    @media (min-width: 992.98px)
+      &:hover
+        color: #ffba00
+        transition: all .2s linear
+
+.footer__unit--portfolio
+  flex: 0 1 27%
+
+.footer__unit--social
+  flex: 0 1 46%
+  p
+    font-weight: 700
+    color: #f9f9f9
+    margin: 0 0 13px
+  a
+    color: #ffba00
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    img
+      margin: 0 7px 0 0
+
+.footer__bottom
+  display: flex
+  justify-content: space-between
+
+.footer__copy
+  color: #666
+  font-family: $thffm
+  font-size: 14px
+
+.footer__up-btn-block
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+    height: 16px
+    width: 15px
+    background: url(../images/footer/icons/arrow-top.png)no-repeat center
+
+.footer__up-btn
+  color: #666
+  font-family: $sffm
+  font-size: 20px
+  background: none
+  padding: 0 0 0 25px

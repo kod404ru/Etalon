@@ -45,15 +45,18 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 	for (let i of priceSwitchList) {
 		i.addEventListener('click', function () {
-			for (let j of priceSwitchList) {
-				j.classList.remove('active')
+			if (this.classList.contains('active')) {
+			} else {
+				for (let j of priceSwitchList) {
+					j.classList.remove('active')
+				}
+				this.classList.add('active')
+				let slideNumber = this.dataset.number
+				for (let a of priceSlideList) {
+					a.classList.remove('active')
+				}
+				priceSlideList[slideNumber].classList.add('active')
 			}
-			this.classList.add('active')
-			let slideNumber = this.dataset.number
-			for (let a of priceSlideList) {
-				a.classList.remove('active')
-			}
-			priceSlideList[slideNumber].classList.add('active')
 		})
 	}
 

@@ -1,0 +1,106 @@
+.contacts
+  background: white
+
+.contacts__inner
+
+.contacts__title
+  font-size: 48px
+  font-weight: 700
+  margin: 0 0 60px
+
+.contacts__content
+  border: 17px solid #ffba00
+  padding: 88px 47px 43px 53px
+  display: flex
+
+.contacts__unit
+  &--left
+    flex: 0 1 60%
+  &--right
+    flex: 0 1 40%
+    display: flex
+    flex-flow: column nowrap
+
+.unit-contacts
+
+.unit-contacts__address
+
+.unit-contacts__city
+  font-size: 39px
+  margin: 0 0 27px
+
+.unit-contacts__street
+  font-size: 38px
+  font-weight: 700
+  margin: 0 0 40px
+  @media (min-width: $md1)
+    padding: 0 230px 0 0
+
+.contacts__social
+
+.social-contacts
+  margin: 0 0 64px
+
+.social-contacts__link
+  a
+    color: #000
+    font-size: 18px
+  &--inst
+    a
+      display: inline-block
+      text-transform: uppercase
+      margin: 0 0 8px
+  &--email
+    a
+      font-family: $thffm
+
+.contacts__announcement
+  font-size: 14px
+  position: relative
+  padding: 22px 0 0
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    height: 3px
+    width: 70px
+    background: black
+
+.unit-contacts__number
+  margin: 0 0 15px
+  a
+    color: #000
+    font-size: 42px
+    font-weight: 700
+
+.unit-contacts__schedule
+  font-size: 17px
+  margin: 0 0 19px
+
+.unit-contacts__btn-block
+  flex: 1 1 auto
+
+.unit-contacts__btn
+  font-size: 15px
+  font-weight: 700
+  text-transform: uppercase
+  padding: 16px 17px
+  background: white
+  border-radius: 17px
+  border: 2px solid #ffba00
+  @media (min-width: 992.98px)
+    &:hover
+      background: #ffba00
+      transition: all .2s linear
+
+.unit-contacts__data
+  font-size: 14px
+  line-height: 2.14
+
+.unit-contacts__tech-info
+  color: #960
+
+.unit-contacts__politics
+  color: #960
+  text-decoration: underline
