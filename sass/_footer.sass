@@ -1,6 +1,12 @@
 .footer
   background: #1d1d1d
   padding: 97px 0 75px
+  @media (max-width: $md1)
+    padding: 60px 0 50px
+  @media (max-width: $md2)
+    padding: 50px 0 40px
+  @media (max-width: $md3)
+    padding: 0 0 10px
 
 .footer__inner
 
@@ -8,14 +14,22 @@
   display: flex
   justify-content: space-between
   margin: 0 0 70px
+  @media (max-width: $md2)
+    flex-flow: row wrap
+  @media (max-width: $md3)
+    margin: 0 0 30px
 
 .box-footer
+  @media (max-width: $md2)
+    order: 2
 
 .box-footer__logo
   margin: 0 0 12px
   max-width: 146px
   img
     max-width: 100%
+  @media (max-width: $md2)
+    max-width: 110px
 
 .box-footer__behaviour
   font-family: $thffm
@@ -26,19 +40,33 @@
 .box-footer__deviz
   color: white
   line-height: 1.71
+  padding: 0 20px 0 0
   @media (min-width: $md1)
     padding: 0 270px 0 0
+  @media (max-width: $md2)
+    padding: 0
 
 .footer__nav
   display: flex
   max-width: 770px
   margin: 0 -30px
   width: 100%
+  @media (max-width: $md1)
+    max-width: 650px
+    margin: 0 -15px
+  @media (max-width: $md2)
+    order: 1
+    max-width: 100%
+    margin: 0 0 30px
+  @media (max-width: $md3)
+    flex-flow: row wrap
 
 .footer__unit
 
 .unit-footer
   padding: 0 30px
+  @media (max-width: $md1)
+    padding: 0 15px
 
 .unit-footer__list
   position: relative
@@ -51,9 +79,14 @@
     height: 1px
     width: 100%
     background: white
+  @media (max-width: $md3)
+    &:before
+      display: none
 
 .footer__unit--price
   flex: 0 1 27%
+  @media (max-width: $md3)
+    flex: 0 1 50%
 
 .unit-footer__item
   a
@@ -68,6 +101,8 @@
 
 .footer__unit--portfolio
   flex: 0 1 27%
+  @media (max-width: $md3)
+    flex: 0 1 50%
 
 .footer__unit--social
   flex: 0 1 46%
@@ -84,10 +119,15 @@
     align-items: center
     img
       margin: 0 7px 0 0
+  @media (max-width: $md3)
+    flex: 0 1 100%
 
 .footer__bottom
   display: flex
   justify-content: space-between
+  @media (max-width: $md3)
+    flex-flow: column-reverse nowrap
+    align-items: center
 
 .footer__copy
   color: #666
@@ -105,6 +145,8 @@
     height: 16px
     width: 15px
     background: url(../images/footer/icons/arrow-top.png)no-repeat center
+  @media (max-width: $md3)
+    margin: 0 0 35px
 
 .footer__up-btn
   color: #666

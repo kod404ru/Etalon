@@ -7,15 +7,35 @@
   font-size: 48px
   font-weight: 700
   margin: 0 0 60px
+  @media (max-width: $md1)
+    margin: 0 0 40px
+  @media (max-width: $md2)
+    margin: 0 0 20px
+    font-size: 44px
+  @media (max-width: $md3)
+    font-size: 32px
+    margin: 0 0 10px
 
 .contacts__content
   border: 17px solid #ffba00
   padding: 88px 47px 43px 53px
   display: flex
+  @media (max-width: $md2)
+    border: 12px solid #ffba00
+    padding: 58px 27px 23px
+  @media (max-width: $md3)
+    border: 9px solid #ffba00
+    padding: 20px 15px 15px
+    flex-flow: row wrap
 
 .contacts__unit
   &--left
     flex: 0 1 60%
+    @media (max-width: $md2)
+      padding: 0 10px 0 0
+    @media (max-width: $md3)
+      flex: 0 1 100%
+      order: 1
   &--right
     flex: 0 1 40%
     display: flex
@@ -28,6 +48,12 @@
 .unit-contacts__city
   font-size: 39px
   margin: 0 0 27px
+  @media (max-width: $md2)
+    font-size: 27px
+    margin: 0 0 10px
+  @media (max-width: $md3)
+    font-size: 21px
+    margin: 0 0 3px
 
 .unit-contacts__street
   font-size: 38px
@@ -35,11 +61,18 @@
   margin: 0 0 40px
   @media (min-width: $md1)
     padding: 0 230px 0 0
+  @media (max-width: $md2)
+    font-size: 31px
+    margin: 0 0 25px
+  @media (max-width: $md3)
+    font-size: 25px
 
 .contacts__social
 
 .social-contacts
   margin: 0 0 64px
+  @media (max-width: $md2)
+    margin: 0 0 44px
 
 .social-contacts__link
   a
@@ -50,9 +83,11 @@
       display: inline-block
       text-transform: uppercase
       margin: 0 0 8px
+      white-space: nowrap
   &--email
     a
       font-family: $thffm
+      white-space: nowrap
 
 .contacts__announcement
   font-size: 14px
@@ -73,6 +108,14 @@
     color: #000
     font-size: 42px
     font-weight: 700
+    white-space: nowrap
+  @media (max-width: $md2)
+    margin: 0 0 10px
+    a
+      font-size: 34px
+  @media (max-width: $md3)
+    a
+      font-size: 25px
 
 .unit-contacts__schedule
   font-size: 17px
@@ -80,6 +123,7 @@
 
 .unit-contacts__btn-block
   flex: 1 1 auto
+  margin: 0 0 15px
 
 .unit-contacts__btn
   font-size: 15px
@@ -93,10 +137,19 @@
     &:hover
       background: #ffba00
       transition: all .2s linear
+  @media (max-width: $md2)
+    padding: 13px 14px
+    border-radius: 12px
+  @media (max-width: $md3)
+    padding: 10px 12px
+    border-radius: 10px
 
 .unit-contacts__data
   font-size: 14px
   line-height: 2.14
+  @media (max-width: $md3)
+    line-height: 1.4
+    margin: 0 0 20px
 
 .unit-contacts__tech-info
   color: #960

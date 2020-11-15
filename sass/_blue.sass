@@ -1,14 +1,31 @@
 .blue
-  background: url(../images/blue/bg.jpg)no-repeat right top / cover #5fb9ce
+  background: url(../images/blue/bg.jpg)no-repeat right -110px top / cover #5fb9ce
   padding: 81px 0 60px
+  @media (max-width: $md1)
+    background: url(../images/blue/bg.jpg)no-repeat right -300px top / cover #5fb9ce
+  @media (max-width: $md3)
+    background: url(../images/blue/bg.jpg)no-repeat right -230px top / cover #5fb9ce
+  @media (max-width: 650px)
+    background: #5fb9ce
+    padding: 20px 0 20px
 
 .blue__inner
+  @media (max-width: 650px)
+    text-align: center
 
 .blue__interest
   color: #fff
   font-size: 317px
   font-weight: 700
   line-height: .7
+  @media (max-width: $md1)
+    font-size: 300px
+  @media (max-width: $md2)
+    font-size: 180px
+  @media (max-width: $md3)
+    font-size: 100px
+  @media (max-width: $md4)
+    font-size: 80px
 
 .blue__benefit
   color: #fff
@@ -26,6 +43,18 @@
     height: 2px
     width: 100%
     background: white
+  @media (max-width: $md1)
+    font-size: 35px
+  @media (max-width: $md2)
+    font-size: 30px
+  @media (max-width: $md3)
+    font-size: 25px
+    &:after
+      bottom: 17px
+  @media (max-width: $md4)
+    font-size: 20px
+    &:after
+      bottom: 13px
 
 .blue__behaviour
   margin: 0 0 41px
@@ -45,6 +74,14 @@
     height: 9px
     width: 9px
     background: white
+  @media (max-width: $md2)
+    font-size: 20px
+  @media (max-width: $md3)
+    font-size: 17px
+  @media (max-width: 650px)
+    padding: 0
+    &:before
+      display: none
 
 .blue__btn-block
 
@@ -58,3 +95,7 @@
     &:hover
       background: #ffba00
       transition: all .2s linear
+  @media (max-width: $md2)
+    padding: 19px 38px
+  @media (max-width: $md3)
+    padding: 15px 25px
