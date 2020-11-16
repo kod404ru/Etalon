@@ -38,6 +38,29 @@ document.addEventListener('DOMContentLoaded', function (event) {
 			this.classList.remove('shadow')
 		}
 	})
+	//на 3 брейк-поинте перекинуть блок с телефоном и колбэком 
+	const headerDataCompanyUnit = document.querySelector('.header__data-company'),
+		md3 = window.matchMedia('(max-width: 768px')
+
+	function handleTabletChange(e) {
+		if (e.matches) {
+			headerBlock.prepend(headerDataCompanyUnit)
+		} else {
+			headerBurgerBtn.before(headerDataCompanyUnit)
+		}
+	}
+
+	md3.addEventListener('change', handleTabletChange)
+	handleTabletChange(md3)
+	//добавление линии для header'a при условии прокрутки страницы
+	window.addEventListener('scroll', function () {
+		const headerInner = document.querySelector('.header__inner')
+		if (window.pageYOffset >= 700) {
+			headerInner.classList.add('down')
+		} else {
+			headerInner.classList.remove('down')
+		}
+	})
 	//price-tab===============================================================================
 	const priceSwitchList = document.querySelectorAll('.price__switch'),
 		priceSlideList = document.querySelectorAll('.slide-price')
@@ -67,6 +90,18 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 	//slider bid-section=============================================
 	// $('.bid__unit--slider').slick()
+	//кнопка для прокрутки до header'а
+	const upToHeaderBtn = document.querySelector('.footer__up-btn')
+
+	upToHeaderBtn.addEventListener('click', function (e) {
+		e.preventDefault()
+		const intro = document.querySelector('.intro')
+		intro.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		})
+	})
+
 
 
 

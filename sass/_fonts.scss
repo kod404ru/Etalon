@@ -1,1 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Poppins:wght@400;600;800&display=swap');
+
+@font-face {
+	font-family: MyriadPro;
+	src: url('/fonts/MyriadPro-Regular.eot');
+	src: local('/fonts/Myriad Pro Regular'), local('/fonts/MyriadPro-Regular'),
+		url('/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/MyriadPro-Regular.woff') format('woff'),
+		url('/fonts/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}

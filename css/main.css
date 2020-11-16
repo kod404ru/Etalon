@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Poppins:wght@400;600;800&display=swap");
+@font-face {
+  font-family: MyriadPro;
+  src: url("/fonts/MyriadPro-Regular.eot");
+  src: local("/fonts/Myriad Pro Regular"), local("/fonts/MyriadPro-Regular"), url("/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/MyriadPro-Regular.woff") format("woff"), url("/fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -200,11 +208,29 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.header__inner.down {
+  position: relative;
+}
+
+.header__inner.down:after {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #ffba00;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
 .logo-header {
   max-width: 146px;
   height: auto;
   position: relative;
   z-index: 3;
+  margin: 0 auto 0 0;
 }
 
 @media (max-width: 1207px) {
@@ -259,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
   .header__block {
     width: 40%;
     right: -40%;
-    padding: 70px 20px 10px;
+    padding: 80px 20px 10px;
   }
 }
 
@@ -334,6 +360,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .data-company-header {
+  position: relative;
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,6 +371,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1207px) {
+  .data-company-header {
+    margin: 0 20px 0 0;
+  }
+}
+
+@media (max-width: 767.98px) {
   .data-company-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -361,6 +395,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1207px) {
   .data-company-header__info {
+    margin: 0 30px 0 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .data-company-header__info {
     margin: 0 0 15px;
     text-align: center;
   }
@@ -374,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-@media (max-width: 1207px) {
+@media (max-width: 767.98px) {
   .data-company-header__number {
     font-size: 22px;
   }
@@ -387,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-@media (max-width: 1207px) {
+@media (max-width: 767.98px) {
   .data-company-header__schedule {
     text-align: left;
     font-size: 14px;
@@ -414,7 +454,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 1207px) {
+@media (max-width: 767.98px) {
   .data-company-header__callback {
     border: none;
     background: black;
@@ -1621,19 +1661,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blue {
-  background: url(../images/blue/bg.jpg) no-repeat right -110px top/cover #5fb9ce;
+  background: url(../images/blue/bg.jpg) no-repeat right -110px top/cover #5cb3c9;
   padding: 81px 0 60px;
 }
 
 @media (max-width: 1207px) {
   .blue {
-    background: url(../images/blue/bg.jpg) no-repeat right -300px top/cover #5fb9ce;
+    background: url(../images/blue/bg.jpg) no-repeat right -300px top/cover #5cb3c9;
   }
 }
 
 @media (max-width: 767.98px) {
   .blue {
-    background: url(../images/blue/bg.jpg) no-repeat right -230px top/cover #5fb9ce;
+    background: url(../images/blue/bg.jpg) no-repeat right -230px top/cover #5cb3c9;
   }
 }
 
