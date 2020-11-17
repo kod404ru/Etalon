@@ -2125,6 +2125,13 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
 }
 
+.contacts__inner {
+  background: white;
+  margin: 0 0 -100px;
+  position: relative;
+  z-index: 2;
+}
+
 .contacts__title {
   font-size: 48px;
   font-weight: 700;
@@ -2389,6 +2396,16 @@ h1, h2, h3, h4, h5, h6 {
 .unit-contacts__politics {
   color: #960;
   text-decoration: underline;
+}
+
+.map {
+  height: 592px;
+}
+
+@media (max-width: 1207px) {
+  .map {
+    height: 500px;
+  }
 }
 
 .footer {
