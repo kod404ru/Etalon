@@ -2081,44 +2081,244 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
-.clients-slider {
+.clients {
   background: white;
   padding: 107px 0 123px;
 }
 
-.clients-slider__inner {
-  max-width: 989px;
-  margin: 0 auto;
+@media (max-width: 1207px) {
+  .clients {
+    padding: 80px 0 100px;
+  }
 }
 
-.clients-item {
+@media (max-width: 992.98px) {
+  .clients {
+    padding: 60px 0 80px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .clients {
+    padding: 30px 0 50px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .clients {
+    padding: 20px 0;
+  }
+}
+
+.clients__inner {
+  max-width: 989px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.clients-item__img {
-  margin: 0 45px 0 0;
+.clients__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
+  padding: 33% 0 0;
+  position: relative;
 }
 
-.clients-item__title {
+.clients__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 992.98px) {
+  .clients__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+    padding: 22% 0 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .clients__img {
+    display: none;
+  }
+}
+
+.clients__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 65%;
+          flex: 0 1 65%;
+  min-width: 0;
+  padding: 0 0 0 45px;
+}
+
+@media (max-width: 992.98px) {
+  .clients__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 80%;
+            flex: 0 1 80%;
+    padding: 0 0 0 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .clients__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0;
+  }
+}
+
+.clients__title {
   font-size: 44px;
   font-weight: 700;
   margin: 0 0 28px;
 }
 
-.clients-item__par {
+@media (max-width: 1207px) {
+  .clients__title {
+    font-size: 40px;
+    margin: 0 0 20px;
+  }
+}
+
+@media (max-width: 992.98px) {
+  .clients__title {
+    font-size: 30px;
+    margin: 0 0 15px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .clients__title {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+.clients__item {
+  min-width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.clients__item-par {
   color: #000607;
   font-size: 18px;
   font-style: italic;
   line-height: 1.4;
-  margin: 0 0 32px;
+  margin: 0 0 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
-.clients-item__name {
+@media (max-width: 1207px) {
+  .clients__item-par {
+    font-size: 17px;
+    margin: 0 0 15px;
+  }
+}
+
+@media (max-width: 992.98px) {
+  .clients__item-par {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .clients__item-par {
+    margin: 0 0 12px;
+    text-align: justify;
+  }
+}
+
+.clients__item-name {
   font-family: MyriadPro;
   font-size: 25px;
   text-align: right;
+}
+
+@media (max-width: 1207px) {
+  .clients__item-name {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 992.98px) {
+  .clients__item-name {
+    font-size: 20px;
+  }
+}
+
+.clients__slider {
+  min-width: 0;
+  position: relative;
+}
+
+.clients__slider .slick-list {
+  overflow: hidden;
+}
+
+.clients__slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 0 0 30px;
+}
+
+@media (max-width: 1207px) {
+  .clients__slider .slick-track {
+    padding: 0 0 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .clients__slider .slick-track {
+    padding: 0 0 15px;
+  }
+}
+
+.clients__slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 20%;
+}
+
+.clients__slider .slick-dots li button {
+  font-size: 0;
+  width: 9px;
+  height: 8px;
+  background: #ccc;
+  margin: 0 21px 0 0;
+}
+
+.clients__slider .slick-dots li:last-child button {
+  margin: 0;
+}
+
+.clients__slider .slick-dots li.slick-active button {
+  background: #ffba00;
 }
 
 .contacts {

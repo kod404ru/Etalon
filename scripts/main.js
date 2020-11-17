@@ -89,7 +89,20 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 
 	//slider bid-section=============================================
-	// $('.bid__unit--slider').slick()
+	$('.clients__slider').slick({
+		// infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		speed: 900,
+		prevArrow: false,
+		nextArrow: false,
+		cssEase: 'ease'
+	})
+
+
+
+
 	//кнопка для прокрутки до header'а
 	const upToHeaderBtn = document.querySelector('.footer__up-btn')
 

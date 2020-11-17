@@ -1,34 +1,91 @@
-.clients-slider
+.clients
   background: white
   padding: 107px 0 123px
+  @media (max-width: $md1)
+    padding: 80px 0 100px
+  @media (max-width: $md2)
+    padding: 60px 0 80px
+  @media (max-width: $md3)
+    padding: 30px 0 50px
+  @media (max-width: $md4)
+    padding: 20px 0
 
-.clients-slider__inner
+.clients__inner
   max-width: 989px
   margin: 0 auto
-
-.clients-slider__item
-
-.clients-item
   display: flex
+  align-items: flex-start
 
-.clients-item__img
-  margin: 0 45px 0 0
+.clients__img
+  flex: 0 1 35%
+  padding: 33% 0 0
+  position: relative
+  img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: contain
+  @media (max-width: $md2)
+    flex: 0 1 20%
+    padding: 22% 0 0
+  @media (max-width: $md3)
+    display: none
 
-.clients-item__text
+.clients__text
+  flex: 0 1 65%
+  min-width: 0
+  padding: 0 0 0 45px
+  @media (max-width: $md2)
+    flex: 0 1 80%
+    padding: 0 0 0 25px
+  @media (max-width: $md3)
+    flex: 0 1 100%
+    padding: 0
 
-.clients-item__title
+.clients__title
   font-size: 44px
   font-weight: 700
   margin: 0 0 28px
+  @media (max-width: $md1)
+    font-size: 40px
+    margin: 0 0 20px
+  @media (max-width: $md2)
+    font-size: 30px
+    margin: 0 0 15px
+  @media (max-width: $md4)
+    font-size: 22px
+    text-align: center
 
-.clients-item__par
+.clients__slider
+
+.clients__item
+  min-width: 0
+  display: flex
+  flex-flow: column nowrap
+
+.clients__item-par
   color: #000607
   font-size: 18px
   font-style: italic
   line-height: 1.4
-  margin: 0 0 32px
+  margin: 0 0 30px
+  flex: 1 1 auto
+  @media (max-width: $md1)
+    font-size: 17px
+    margin: 0 0 15px
+  @media (max-width: $md2)
+    font-size: 16px
+  @media (max-width: $md3)
+    margin: 0 0 12px
+    text-align: justify
 
-.clients-item__name
+.clients__item-name
   font-family: $thffm
   font-size: 25px
   text-align: right
+  @media (max-width: $md1)
+    font-size: 23px
+  @media (max-width: $md2)
+    font-size: 20px
