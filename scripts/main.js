@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	})
 	//на 3 брейк-поинте перекинуть блок с телефоном и колбэком 
 	const headerDataCompanyUnit = document.querySelector('.header__data-company'),
-		md3 = window.matchMedia('(max-width: 768px')
+		md3 = window.matchMedia('(max-width: 992px')
 
 	function handleTabletChange(e) {
 		if (e.matches) {
