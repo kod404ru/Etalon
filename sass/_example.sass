@@ -1,0 +1,55 @@
+.example
+  background: white
+  padding: 0 0 96px
+  @media (max-width: $md1)
+    padding: 0 0 50px
+  @media (max-width: $md3)
+    padding: 0 0 30px
+
+.example__top
+  display: flex
+  align-items: flex-end
+  margin: 0 auto 59px
+  @media (max-width: $md1)
+    flex-wrap: wrap
+    justify-content: center
+    margin: 0 auto 30px
+  @media (max-width: $md2)
+    margin: 0 auto 15px
+
+.example__title
+  font-size: 48px
+  font-weight: 700
+  margin: 0 82px 0 0
+  @media (max-width: $md1)
+    flex: 0 1 100%
+    margin: 0 0 15px
+    text-align: center
+  @media (max-width: $md4)
+    font-size: 34px
+
+.example__btn-block
+
+.example__btn
+  font-size: 14px
+  font-weight: 500
+  text-transform: uppercase
+  background: white
+  line-height: 1.9
+  @media (max-width: $md1)
+    font-size: 17px
+
+.example__btn.active
+  color: #ffba00
+  font-weight: 700
+  text-decoration: underline
+  transition: all .2s linear
+
+.example__btn--new
+  margin: 0 40px 0 0
+  @media (max-width: $md1)
+    margin: 0 30px 0 0
+  @media (max-width: $md2)
+    margin: 0 10px 0 0
+
+.example__btn--old

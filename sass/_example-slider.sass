@@ -1,0 +1,160 @@
+.example__slider
+  padding: 0 0 90px
+  display: none
+  @media (max-width: $md1)
+    padding: 0 0 50px
+  @media (max-width: $md2)
+    padding: 0 0 40px
+  @media (max-width: $md3)
+    padding: 0 0 35px
+    width: 80%
+    margin: 0 auto
+  @media (max-width: $md4)
+    width: 100%
+
+.example__slider.active
+  display: block
+
+.example__item
+
+.unit-example__wrap
+  padding: 0 15px
+
+.unit-example
+  height: 575px
+  padding: 30px 20px
+  display: flex
+  align-items: flex-end
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  @media (min-width: 992.98px)
+    &:hover
+      .unit-example__backface
+        transform: translateY(100%)
+        transition: all .5s linear
+      .unit-example__title
+        opacity: 0
+        transition: all .2s linear
+  &--first
+    background: url(../images/example/picture1.jpg)no-repeat center / cover
+  &--second
+    background: url(../images/example/picture2.jpg)no-repeat center / cover
+  &--third
+    background: url(../images/example/picture3.jpg)no-repeat center / cover
+  &--fourth
+    background: url(../images/example/picture2.jpg)no-repeat center / cover
+  &--one
+    background: url(../images/example/image1.jpg)no-repeat center / cover
+  &--two
+    background: url(../images/example/image2.jpg)no-repeat center / cover
+  &--three
+    background: url(../images/example/image3.jpg)no-repeat center / cover
+  &--four
+    background: url(../images/example/image4.jpg)no-repeat center / cover
+  &--five
+    background: url(../images/example/image5.jpg)no-repeat center / cover
+  @media (max-width: 1600px)
+    height: 400px
+    padding: 15px 10px
+
+.unit-example__title
+  color: #ffffff
+  font-size: 30px
+  line-height: 36px
+  span
+    display: block
+  sup
+    font-size: 15px
+
+.unit-example__title.hidden
+  display: none
+
+.unit-example__backface
+  position: absolute
+  top: -100%
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(242, 184, 26, .9)
+  padding: 52px 35px
+  transition: all .2s linear
+  @media (max-width: 1600px)
+    padding: 25px 15px
+
+.unit-example__backface.active
+  transform: translateY(100%)
+  transition: all .5s linear
+
+.unit-example__backface__title
+  font-size: 30px
+  margin: 0 0 159px
+  span
+    display: block
+    font-weight: 700
+    line-height: 36px
+  sup
+    font-size: 17px
+  @media (max-width: 1600px)
+    margin: 0 0 15px
+
+.unit-example__par
+  color: #333333
+  font-family: $thffm
+  font-size: 14px
+  line-height: 24px
+  letter-spacing: 0.35px
+  text-align: left
+
+.example__slider
+
+  /* Слайдер запущен */
+  .slick-slider.slick-initialized
+
+  /* Слайдер с точками */
+  .slick-slider.slick-dotted
+
+  /* Ограничивающая оболочка */
+  .slick-list
+
+  /* Лента слайдов */
+  .slick-track
+    display: flex
+
+  /* Слайд */
+  .slick-slide
+
+  /* Слайд активный (показывается) */
+  .slick-slide.slick-active
+
+  /* Слайд основной */
+  .slick-slide.slick-current
+
+  /* Слайд по центру */
+  .slick-slide.slick-center
+
+  /* Клонированный слайд */
+  .slick-slide.slick-cloned
+
+  /* Стрелка */
+  .slick-arrow
+
+  /* Стрелка влево */
+  .slick-arrow.slick-prev
+
+  /* Стрелка вправо */
+  .slick-arrow.slick-next
+
+  /* Стрелка не активная */
+  .slick-arrow.slick-disabled
+
+  /* Точки (булиты) */
+  .slick-dots
+
+  .slick-dots li
+
+  /* Элемент точки */
+  .slick-dots li button
+
+  /* Активная точка */
+  .slick-dots li.slick-active button

@@ -6,13 +6,35 @@
   margin: 0 auto
   padding: 121px 0 172px
   display: flex
-  justify-content: space-between
+  align-items: center
+  @media (max-width: $md1)
+    padding: 90px 0 130px
+  @media (max-width: $md2)
+    flex-wrap: wrap
+    padding: 40px 0 70px
+    align-items: flex-start
+  @media (max-width: $md3)
+    padding: 5px 0 30px
+    justify-content: center
 
 .bid__unit
   &--text
     flex: 0 1 60%
+    @media (max-width: $md1)
+      padding: 0 20px 0 0
+    @media (max-width: $md3)
+      flex: 0 1 100%
+      order: 2
+      padding: 0
   &--slider
     flex: 0 1 40%
+    min-width: 0
+    @media (max-width: $md3)
+      flex: 0 1 70%
+      order: 1
+      margin: 0 0 15px
+    @media (max-width: $md4)
+      flex: 0 1 100%
 
 .unit-bid
 
@@ -20,12 +42,25 @@
   font-size: 37px
   font-weight: 700
   margin: 0 0 39px
+  @media (max-width: $md2)
+    font-size: 27px
+    margin: 0 0 19px
+  @media (max-width: $md3)
+    text-align: center
+  @media (max-width: $md4)
+    font-size: 20px
 
 .unit-bid__body
   padding: 0 0 0 15px
+  @media (max-width: $md2)
+    padding: 0 0 0 5px
+  @media (max-width: $md4)
+    padding: 0
 
 .unit-bid__behaviour
   margin: 0 0 45px
+  @media (max-width: $md4)
+    margin: 0 0 30px
 
 .unit-bid__behaviour-item
   font-size: 21px
@@ -41,6 +76,14 @@
     height: 9px
     width: 9px
     background: #ffba00
+  @media (max-width: $md2)
+    font-size: 17px
+    padding: 0 0 0 15px
+    &:before
+      width: 7px
+      height: 7px
+    @media (max-width: $md4)
+      font-size: 16px
 
 .unit-bid__data
 
@@ -50,10 +93,13 @@
 
 .bid-form__user-data
   display: flex
-  max-width: 535px
   color: #8d98b1
   font-size: 17px
   margin: 0 -10px 30px
+  @media (min-width: $md1)
+    max-width: 535px
+  @media (max-width: $md4)
+    flex-wrap: wrap
 
 .bid-form__user-name
   flex: 0 1 50%
@@ -67,6 +113,9 @@
     height: 24px
     width: 21px
     background: url(../images/bid/icons/man.jpg)no-repeat center
+  @media (max-width: $md4)
+    flex: 0 1 100%
+    margin: 0 0 15px
 
 .bid-form__user-name-input
   color: #8d98b1
@@ -74,6 +123,17 @@
   border-bottom: 2px solid #d2d2d2
   width: 100%
   padding: 10px 35px 10px 10px
+  @media (max-width: $md2)
+    font-size: 16px
+
+.bid-form__user-name-input.valid
+  border-bottom: 2px solid green
+  color: green
+
+.bid-form__user-name-input.invalid
+  border-bottom: 2px solid coral
+  &::placeholder
+    color: coral
 
 .bid-form__user-tel
   flex: 0 1 50%
@@ -87,6 +147,8 @@
     height: 28px
     width: 24px
     background: url(../images/bid/icons/phone.jpg)no-repeat center
+  @media (max-width: $md4)
+    flex: 0 1 100%
 
 .bid-form__user-tel-input
   color: #8d98b1
@@ -94,6 +156,18 @@
   border-bottom: 2px solid #d2d2d2
   width: 100%
   padding: 10px 40px 10px 10px
+  @media (max-width: $md2)
+    font-size: 16px
+
+.bid-form__user-tel-input.invalid
+  border-bottom: 2px solid coral
+  color: coral
+  &::placeholder
+    color: coral
+
+.bid-form__user-tel-input.valid
+  border-bottom: 2px solid green
+  color: green
 
 .bid-form__agreed-upon
   color: #aeaeae
@@ -106,12 +180,22 @@
     text-decoration: underline
     padding: 0 0 0 4px
 
+.bid-form__agreed-upon.invalid
+  color: coral
+  a
+    color: coral
+
 .bid-form__agreed-checkbox
   margin: 0 11px 0 0
   width: 19px
   height: 19px
+  @media (max-width: $md2)
+    width: 16px
+    height: 16px
 
 .bid-form__btn-block
+  @media (max-width: $md3)
+    text-align: center
 
 .bid-form__btn
   padding: 14px 60px
@@ -125,3 +209,6 @@
     &:hover
       background: #ffba00
       transition: all .2s linear
+  @media (max-width: $md2)
+    padding: 10px 45px
+    border-radius: 14px

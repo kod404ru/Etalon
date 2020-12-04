@@ -1,0 +1,36 @@
+.slick-slider
+  position: relative
+  min-width: 0
+
+.slick-track
+  display: flex
+  position: relative
+
+.slick-list
+  overflow: hidden
+
+.slick-dots
+  display: flex
+  position: absolute
+  z-index: 2
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  li
+    button
+      font-size: 0
+      width: 9px
+      height: 8px
+      background: #ccc
+      margin: 0 21px 0 0
+    li:last-child
+      button
+        margin: 0
+  li.slick-active
+    button
+      background: #ffba00
+  @media (max-width: $md2)
+    li
+      button
+        width: 15px
+        height: 14px
